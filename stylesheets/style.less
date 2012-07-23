@@ -4,13 +4,24 @@
  */
 @import "/stylesheets/elements.less";
 
+html, body {
+	width:100%;
+}
+
+@darkblue: #003E72;
+@swipelyblue:#007CC5;
+@lightblue:#0090CE;
+
 #swipely-header {
 	position:relative;
-	width:100%;
-	.bordered(#003E72, #007CC5, #003E72, #007CC5);
-	.gradient(#007CC5, #007CC5, #0090CE);
+	.bordered(@darkblue, @swipelyblue, @darkblue, @swipelyblue);
+	border-left-width:0px;
+	border-right-width:0px;
+	.gradient(@swipelyblue, @swipelyblue, @lightblue);
 	line-height:18px;
 	height:48px;
+	margin: 0px;
+	padding:0px;
 }
 #swipely-nav {
 	position:absolute;
@@ -41,7 +52,8 @@ footer {
 	background-image:url('http://www.swipelyworks.com/img/footer-bg.png');
 }
 .box-1-left {
-	background-color:green;
+/*, , , #007CC5);*/
+	background-color:#0090CE;
 }
 .box-1-right {
 	background-color:grey;
