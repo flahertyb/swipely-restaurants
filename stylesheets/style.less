@@ -40,33 +40,9 @@ html, body {
 #logo {
 	margin-left:20px;
 }
-/* TODO: add queries for nav getting smaller
- */
-.box-1, .box-1-left, .box-1-right {
-	height:490px;
-}
-.box-2, .box-2-left, .box-2-right {
-	height:440px;	
-}
-.box-3, .testimonial {
-	height:200px;
-}
-
 footer {
 	height:172px;
 	background-image:url('http://www.swipelyworks.com/img/footer-bg.png');
-}
-.box-1-left {
-	background-color:@lightblue;
-}
-.box-1-right {
-	background-color:grey;
-}
-.box-2-left {
-	background-color:lightgrey;
-}
-.box-2-right {
-	background-color:lightblue;
 }
 .bold-me {
 	font-weight:bold;
@@ -118,7 +94,7 @@ footer {
 }
 .features {
 	padding-top:20px;
-	text-align:center;
+	
 }
 .features div, .features ul{
 	float:left;
@@ -133,22 +109,31 @@ footer {
 
 .features li {
 	width:191px;
-	background-image:url('../images/a-feature.png');
+	background:url('../images/feature-button.png') 0 0 no-repeat;
 	height:26px;
 	padding:20px;
 	font-size:24px;
 	color:white;
 	font-weight:bold;
 	margin:27px 0px;
+	text-align:center;
 }
+.features li:hover {
+	background:url('../images/feature-button.png') 0 -132px no-repeat;
+	cursor:pointer;
+}
+.feature-hover:hover {
+	background:url('../images/feature-button.png') 0 -132px no-repeat !important;
+}
+
 /* TODO: switch this to h2 and make the pitch h2 an h3 */
 .features h1 {
 	font-size:32px;
 }
 .feature-screenshots {
-	width:449px;
-	height:268px;
-	margin:20px;
+	width:400px;
+	height:254px;
+	margin:25px;
 	background-image:url("http://www.placekitten.com/400/254");
 	background-position:center;
 	background-repeat:no-repeat;
