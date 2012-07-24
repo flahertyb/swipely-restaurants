@@ -12,10 +12,10 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
 	<link rel="stylesheet/less" type="text/css" href="stylesheets/elements.less">
+	<link rel="stylesheet/less" href="stylesheets/base.less">
+	<link rel="stylesheet/less" href="stylesheets/skeleton.less">
+	<link rel="stylesheet/less" href="stylesheets/layout.less">
 	<link rel="stylesheet/less" type="text/css" href="stylesheets/style.less">	
 	<script src="js/less.js" type="text/javascript"></script>
 	<!--[if lt IE 9]>
@@ -34,34 +34,41 @@
 			<img src="images/logo.png" id="logo">
 		</div>
 	</header>
-	
-	<div class="container">
-		<section class="box-1 sixteen columns">
-			<div class="eight columns box-1-left">
-			</div>
-			<div class="eight columns box-1-right">
-			</div>
-		</section>
 
-		<section class="box-2 sixteen columns">
-			<div class="six columns box-2-left">
+	<div class="restaurant-bg">
+		<div class="container">
+			<div class="sixteen columns">
+				<div class="pitch">
+					<h1>Bring <span class="orange-me">your customers</span> back.  Again and again.</h1>
+					<h2><span class="bold-me">Swipely</span> unlocks your transactional data to get you closer to your patrons.<!-- <span class="bold-me">valuable analytics</span> and <span class="bold-me">marketing tools</span> for your restaurant, at <span class="bold-me">no additional cost</span>. --></h2>
+					<ul>
+						<li class="value-prop" id="revenue"><img src="images/arrow.png"><br>Lift revenue with repeat visits from valuable, loyal customers.</li>
+						<li class="value-prop" id="customers"><img src="images/people.png"><br>Lift revenue with repeat visits from valuable, loyal customers.</li>
+						<li class="value-prop" id="low-cost"><img src="images/dollar.png"><br>Lift revenue with repeat visits from valuable, loyal customers.</li>
+					</ul>
+					<a class="call-to-action" href="foo.com">Get Started With Swipely</a>
+				</div>
 			</div>
-			<div class="ten columns box-2-right">
-			</div>
-		</section>
+		</div>
+	</div>
+	<div class="features-bg">
+		<div class="features container">
+			<h1>Without charging any more than your current credit card processor, Swipely brings your restaurant:</h1>
+			<div class="twelve columns offset-by-two">
+					<ul class="feature-labels">
+						<li>Analytics</li>
+						<li>Loyalty</li>
+						<li>Marketing</li>
+					</ul>
+				<div class="feature-screenshots">
 
-		<section class="box-3 sixteen columns">
-			<div class="four columns testimonial">
+				</div>
+				<div class="feature-content" id="feature1"><p>Some content</p></div>
+				<div class="feature-content" id="feature2" style="display:none;"><p>Some content</p></div>
+				<div class="feature-content" id="feature3" style="display:none;"><p>Some content</p></div>
 			</div>
-			<div class="four columns testimonial">
-			</div>
-			<div class="four columns testimonial">
-			</div>
-			<div class="four columns testimonial">
-			</div>
-		</section>
-
-	</div><!-- container -->
+		</div>
+	</div>
 
 	<footer>
 	</footer>
