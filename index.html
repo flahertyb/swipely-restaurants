@@ -56,6 +56,7 @@
 		<div class="features container">
 			
 			<h1 class="bold-me">Features</h1>
+			<hr>
 
 			<ul class="feature-labels">
 				<li>Analytics</li>
@@ -66,33 +67,96 @@
 			<div class="feature-screenshots">
 			</div>
 
-			<div class="feature-content" id="feature1"><h3 class="blue-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3></div>
-			
-			<div class="feature-content" id="feature2" style="display:none;"><h3 class="blue-me">Some content</h3></div>
-			
-			<div class="feature-content" id="feature3" style="display:none;"><h3 class="blue-me">Some content</h3></div>
+			<div class="feature-content">
+				<h3 class="blue-me" id="analytics-content">Analytics ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
+				<h3 class="blue-me" id="loyalty-content" style="display:none">Loyalty ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
+				<h3 class="blue-me" id="marketing-content" style="display:none">Marketing ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h3>
+			</div>
 
 		</div>
 	</div>
 
 	<div class="testimonials-bg">
 		<div style="display:none;" class="featured-in"></div>
+		
+		<div class="testimonial-container" style="background-color:transparent;">
+			<h1 class="bold-me" style="color:white;">Testimonials</h1>
+		</div>
+
 		<div class="testimonial-container">
 			<div class="testimonial">
+				<div id="fine-dining-quote">
 				<h1 id="quote">Swipely is a payment processor that's actually on my side.</h1>
 				<div id="source"><img src="images/user-icon.jpg"><p>-</p><p>Jon, owner of <br> <a href="http://steaksbyjon.com">Jon's Steakhouse</a></p></div>
+				</div>
+				<div id="fast-casual-quote" style="display:none;">
+				<h1 id="quote">Swipely is a payment processor that's actually on my side.</h1>
+				<div id="source"><img src="images/user-icon.jpg"><p>-</p><p>Jon, owner of <br> <a href="http://steaksbyjon.com">Jon's Steakhouse2</a></p></div>
+				</div>
+				<div id="casual-dining-quote" style="display:none;">
+				<h1 id="quote">Swipely is a payment processor that's actually on my side.</h1>
+				<div id="source"><img src="images/user-icon.jpg"><p>-</p><p>Jon, owner of <br> <a href="http://steaksbyjon.com">Jon's Steakhouse</a></p></div>
+				</div>
 			</div>
 			<div class="swipely-works">
-				<ul>
+				<ul class="business-types">
 					<li><img src="images/fine-dining.jpeg"><br>Fine Dining</li>
 					<li><img src="images/fast-casual.jpeg"><br>Fast Casual</li>
 					<li><img src="images/casual-dining.jpeg"><br>Casual Dining</li>
 				</ul>
+				<div style="clear:both;"></div>
+				<h3 id="fine-dining-content">first</h3>
+				<h3 id="fast-casual-content" style="display:none;">second</h3>
+				<h3 id="casual-dining-content" style="display:none;">third</h3>
 			</div>
 		</div>
 	</div>
 
-	<footer>
+	 <footer >
+		<div class='container'>
+			<div class="sixteen columns">
+				
+				
+				<div class="eight columns">
+					<h4>Get in touch</h4>
+					<div class="three columns">
+
+						<div class='phone'>
+							<!-- %h5 Call us toll-free: -->
+							<div class='number'>888-Swipely</div>
+						</div>
+						<div class='mail'>
+							<!-- %h5 Mailing address: -->
+							<address>
+							  39 Pike Street,<br />
+							  Providence,<br />
+							  RI 02903
+							</address>
+				  		</div>
+
+					</div>
+					<div class="five columns">
+				  		<a stye="width:160px"href="https://twitter.com/swipely" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @swipely</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				  		<div class="fb-like" data-href="https://www.facebook.com/swipely" data-send="false" data-width="250" data-show-faces="true" data-font="arial"></div>
+
+				  	</div>
+				</div>
+				<div class="eight columns">
+					<div class='logos'>
+						<a>
+					  	<img alt='' src='images/badges.png'>
+						</a>
+			  		</div>
+			  		<p class='terms'>Swipely is a registered ISO/MSP of Wells Fargo Bank, N.A., Walnut Creek, CA</p>
+			  		<p class='links'>
+			  			<a href='https://swipely.com/privacy'>Privacy Policy</a>
+			  			|
+						<a href='https://swipely.com/terms'>Terms of Use</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	</footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

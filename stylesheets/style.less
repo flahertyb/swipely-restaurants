@@ -42,7 +42,6 @@ html, body {
 	margin-left:20px;
 }
 footer {
-	height:172px;
 	background-image:url('http://www.swipelyworks.com/img/footer-bg.png');
 }
 
@@ -134,7 +133,7 @@ div.center-me {
 	background:url('../images/feature-button.png') 0 -132px no-repeat !important;
 }
 /* TODO: switch this to h2 and make the pitch h2 an h3 */
-.features h1 {
+.features h1, .testimonial-container h1 {
 	font-size:32px;
 }
 .feature-screenshots {
@@ -145,6 +144,9 @@ div.center-me {
 	background-image:url("../images/feature-sprite.png");
 	background-position: 0 0;
 	background-repeat:no-repeat;
+}
+.feature-content {
+	height:100px;
 }
 
 .testimonials-bg {
@@ -179,7 +181,7 @@ div.center-me {
 }
 #source {
 	position:relative;
-	width:260px;
+	width:280px;
 	margin:0 auto;
 }
 #source p, #source img {
@@ -190,17 +192,23 @@ div.center-me {
 	margin-top:25px;
 	text-align:left;
 }
+#source a {
+	text-decoration:none;
+}
+#source a:hover {
+	color:#FF7F00;
+}
 #source img {
 	margin-right:15px;
-	.border-radius(10px, 10px, 10px, 10px);	
+	.border-radius(10px, 10px, 10px, 10px);
 }
 .swipely-works {
 	width:@sw-total-width * 3;
-	height:200px;
+
 	margin:0 auto;
 }
 .swipely-works ul {
-
+	padding-top:20px;
 	margin:0 auto;
 	width:@sw-total-width * 3;
 	text-align:center;
@@ -210,22 +218,33 @@ div.center-me {
 @sw-width:190px;
 @sw-total-width:@sw-padding * 2 + @sw-width;
 
-.swipely-works li {
-	background-image:url("../images/pointer.jpg");
-	background-position:bottom center;
-	background-repeat:no-repeat;
+.business-types li {
 	float:left;
-	height:180px;
+	height:190px;
 	width:@sw-width;
 	padding-left:@sw-padding;
 	padding-right:@sw-padding;
-	font-size:12px;
+	font-size:18px;
 }
-
-.swipely-works img {
+.business-types img:hover {
+	cursor:pointer;
+}
+.show-pointer{
+	background-image:url("../images/pointer.jpg");
+	background-position:bottom center;
+	background-repeat:no-repeat;
+}
+.hide-pointer{
+	background-image:none;
+}
+.business-types img {
+	margin-bottom:10px;
 	.border-radius(10px, 10px, 10px, 10px);	
 }
-
+.swipely-works h3 {
+	text-align:center;
+	padding:30px;
+}
 
 
 
@@ -287,3 +306,55 @@ a.call-to-action:active {
     -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.3);
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.3);
 }
+
+
+/* FOOTER STYLES FROM SWIPELYWORKS.COM */
+  footer .number,
+  footer .twitter,
+  footer .facebook,
+  footer address {
+    color: #10558f;
+    background: url(../img/footer-icons.png) top left no-repeat;
+    padding-left: 24px;
+    font-size: 12px;
+    margin: 5px 0;
+    line-height: 18px; }
+  footer .number {
+    background-position: 0px 0px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 200; }
+    footer .twitter {
+    background-position: 0px -24px; }
+  footer .facebook {
+    background-position: 0px -48px; }
+  footer address {
+    background-position: 0px -70px;
+    font-weight: 200; }
+  footer .twitter,
+  footer .facebook {
+    font-weight: bold;
+    display: block;
+    text-decoration: underline; }
+  footer .logos,
+  footer .terms,
+  footer .links {
+    text-align: right;
+    font-size: 12px; }
+  footer .logos {
+    margin-bottom: 20px; }
+  footer .links a {
+    color: #10558f;
+    text-decoration: underline;
+    font-weight: bold; }
+  footer h4 {
+  	text-transform: uppercase;
+	font-size: 12px;
+	padding-bottom: 6px;
+	background: url(../images/footer-line-fade.png) bottom left no-repeat;
+	margin-bottom: 16px;
+	font-weight:bold; }
+  footer div.container {
+  	padding-top:30px;
+  	padding-bottom:15px;	
+  }
