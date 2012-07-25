@@ -27,6 +27,7 @@ html, body {
 	height:48px;
 	margin: 0px;
 	padding:0px;
+	z-index:3;
 }
 #swipely-nav {
 	position:absolute;
@@ -44,15 +45,16 @@ footer {
 	height:172px;
 	background-image:url('http://www.swipelyworks.com/img/footer-bg.png');
 }
-.bold-me {
-	font-weight:bold;
-}
+
 .restaurant-bg {
+	position:relative;
 	height:475px;
 	width:100%;
 	background-image:url('../images/bg.jpg');
 	background-position:center;
 	padding-top:20px;
+	.drop-shadow(0, 2px, 10px, 1);
+	z-index:2;
 }
 
 @pitch-width:537px;
@@ -88,34 +90,40 @@ footer {
 	padding-right:@vp-padding;
 	font-size:12px;
 }
-
 .features-bg {
+	width:100%;
+	position:relative;
 	background-image:url('../images/bg-2.jpg');
+	z-index:1;
 }
-.features {
+div.features {
 	padding-top:20px;
-	
+	overflow:auto;
+	width:850px;
+	margin: 0 auto;
+}
+div.center-me {
+	margin:0 auto !important;
+}
+.features h1 {
+	margin-bottom:0px;
 }
 .features div, .features ul{
 	float:left;
 }
-.feature-screenshots {
-
-
-}
 .features ul{
 	margin:0px;
 }
-
 .features li {
 	width:191px;
 	background:url('../images/feature-button.png') 0 0 no-repeat;
 	height:26px;
 	padding:20px;
-	font-size:24px;
+	font-size:28px;
+	letter-spacing:1px;
 	color:white;
 	font-weight:bold;
-	margin:27px 0px;
+	margin:60px 0px;
 	text-align:center;
 }
 .features li:hover {
@@ -125,32 +133,97 @@ footer {
 .feature-hover:hover {
 	background:url('../images/feature-button.png') 0 -132px no-repeat !important;
 }
-
 /* TODO: switch this to h2 and make the pitch h2 an h3 */
 .features h1 {
 	font-size:32px;
 }
 .feature-screenshots {
-	width:400px;
-	height:254px;
-	margin:25px;
-	background-image:url("http://www.placekitten.com/400/254");
+	width:497px;
+	height:409px;
+	margin:20px;
+	margin-left:102px;
+	background-image:url("../images/feature-sprite.png");
+	background-position: 0 0;
+	background-repeat:no-repeat;
+}
+
+.testimonials-bg {
+	width:100%;
+	height:auto;
+	background-image:url("../images/bg-3.jpg");
+	padding-top:20px;
+	padding-bottom:40px;
+	z-index:3;
+}
+.testimonial-container {
+	width:850px;
+	background-color:rgba(255,255,255,1);
+	.border-radius(10px, 10px, 10px, 10px);
+	margin:0 auto;
+}
+.testimonial {
+	background-image:url("../images/testimonial-bg.png");
 	background-position:center;
 	background-repeat:no-repeat;
-	-webkit-box-shadow: inset 0 1px 0 #b1ff2a, 0px 1px 3px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: inset 0 1px 0 #b1ff2a, 0px 1px 3px rgba(0, 0, 0, 0.3);
-	box-shadow: inset 0 1px 0 #b1ff2a, 0px 1px 3px rgba(0, 0, 0, 0.3);
+	width:850px;
+	height:250px;
+	padding-top:50px;
+	margin: 0 auto;
+	text-align:center;
 }
-div.feature-content {
-	width:429px;
-	height:100px;
-	padding:10px;
-	float:right;
-	margin-right:20px;
+#quote{
+	font-size:34px;
+	position:relative;
+	width:380px;
+	margin: 0 auto;
+}
+#source {
+	position:relative;
+	width:260px;
+	margin:0 auto;
+}
+#source p, #source img {
+	float:left;
+	font-size:18px;
+	line-height:28px;
+	margin:5px;
+	margin-top:25px;
+	text-align:left;
+}
+#source img {
+	margin-right:15px;
+	.border-radius(10px, 10px, 10px, 10px);	
+}
+.swipely-works {
+	width:@sw-total-width * 3;
+	height:200px;
+	margin:0 auto;
+}
+.swipely-works ul {
+
+	margin:0 auto;
+	width:@sw-total-width * 3;
+	text-align:center;
 }
 
+@sw-padding:20px;
+@sw-width:190px;
+@sw-total-width:@sw-padding * 2 + @sw-width;
 
-
+.swipely-works li {
+	background-image:url("../images/pointer.jpg");
+	background-position:bottom center;
+	background-repeat:no-repeat;
+	float:left;
+	height:180px;
+	width:@sw-width;
+	padding-left:@sw-padding;
+	padding-right:@sw-padding;
+	font-size:12px;
+}
+.swipely-works img {
+	.border-radius(10px, 10px, 10px, 10px);	
+}
 
 
 

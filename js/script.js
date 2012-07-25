@@ -6,34 +6,32 @@ var features = function() {
 	var labelHighlight = function(label){
 
 		var otherlabels = $('.feature-labels').children().not(label);
-
 		$(otherlabels).css('backgroundPosition', '0 0');
 		$(otherlabels).addClass('feature-hover');
-
 		$(label).removeClass('feature-hover');
 		$(label).css('backgroundPosition', '0 -66px');
 	}
-
 	// displays the corresponding picture in the feature-screenshots div
 	var switchContent = function(label){
-
 		var name = $(label).text();
-		console.log(name);
+		var bgPos;
 		switch (name) {
 			case "Analytics":
-				$('div.feature-screenshots').css("backgroundImage", "url('http://www.placekitten.com/400/254')");
+				bgPos = "0"
 				break;
 			case "Loyalty":
-				$('div.feature-screenshots').css("backgroundImage", "url('http://www.placekitten.com/400/256')");
+				bgPos = "-497px"
 				break;
 			case "Marketing":
-				$('div.feature-screenshots').css("backgroundImage", "url('http://www.placekitten.com/400/253')");		
+				bgPos = "-994px"
 				break;
 			default:
 				break;
 		}
+		$('div.feature-screenshots').animate({
+		  'background-position-x': bgPos
+		}, 500, 'linear');
 	}
-
 	// calls previous functions on click event
 	$('.feature-labels li').click(function(){ 
 			labelHighlight(this); 
