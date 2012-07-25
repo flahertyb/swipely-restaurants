@@ -41,9 +41,7 @@ html, body {
 #logo {
 	margin-left:20px;
 }
-footer {
-	background-image:url('http://www.swipelyworks.com/img/footer-bg.png');
-}
+
 
 .restaurant-bg {
 	position:relative;
@@ -65,7 +63,7 @@ footer {
 	border-style:solid;
 	border-width:2px;
 	border-color:grey;
-	background-color:rgba(255,255,255, 1);
+	background-color:rgba(255,255,255, .9);
 	behavior:url('PIE.htc');
 }
 
@@ -78,7 +76,7 @@ footer {
 }
 
 @vp-padding:20px;
-@vp-width:125px;
+@vp-width:140px;
 @vp-total-width:@vp-padding * 2 + @vp-width;
 
 .value-prop li {
@@ -88,6 +86,7 @@ footer {
 	padding-left:@vp-padding;
 	padding-right:@vp-padding;
 	font-size:12px;
+	font-weight:bold;
 }
 .features-bg {
 	width:100%;
@@ -146,16 +145,31 @@ div.center-me {
 	background-repeat:no-repeat;
 }
 .feature-content {
-	height:100px;
+	padding-top:10px;
+	height:200px;
 }
-
+.featured-in {
+	height:110px;
+	width:850px;
+	background-color:white;
+	.drop-shadow(0, 2px, 10px, 1);
+	.border-radius(10px, 10px, 10px, 10px);
+	margin:0 auto;
+	margin-top:-80px;
+	margin-bottom:50px;
+	background-image:url('../images/featured-in.jpg');
+	background-position:center;
+	background-repeat: no-repeat;
+}
 .testimonials-bg {
+	position:relative;
 	width:100%;
 	height:auto;
 	background-image:url("../images/bg-3.jpg");
 	padding-top:20px;
 	padding-bottom:40px;
 	z-index:3;
+	.drop-shadow(0, 2px, 15px, 1);	
 }
 .testimonial-container {
 	width:850px;
@@ -245,6 +259,11 @@ div.center-me {
 	text-align:center;
 	padding:30px;
 }
+footer {
+	position:relative;
+	z-index:1;
+	background-image:url('http://www.swipelyworks.com/img/footer-bg.png');
+}
 
 
 
@@ -308,13 +327,14 @@ a.call-to-action:active {
 }
 
 
+
 /* FOOTER STYLES FROM SWIPELYWORKS.COM */
   footer .number,
   footer .twitter,
   footer .facebook,
   footer address {
     color: #10558f;
-    background: url(../img/footer-icons.png) top left no-repeat;
+    background: url(../images/footer-icons.png) top left no-repeat;
     padding-left: 24px;
     font-size: 12px;
     margin: 5px 0;
