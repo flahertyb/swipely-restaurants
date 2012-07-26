@@ -1,0 +1,105 @@
+html,
+body {
+  background-image: url('../images/bg-2.jpg');
+}
+label {
+  font-size: 18px;
+  line-height: 38px;
+  margin-top: 25px;
+}
+#lead-business input,
+#lead-email input {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+}
+section.container {
+  width: 768px;
+}
+.form-container {
+  width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+  background-color: #F1F8FD;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #A0B9D3;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+a.button.blue {
+  display: table-cell;
+  vertical-align: middle;
+  width: 380px;
+  height: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+#centered {
+  padding-top: 20px;
+  width: 380px;
+  margin: 0 auto;
+}
+input[type="text"].focusField {
+  border-color: #007CC5;
+  border-width: 3px;
+}
+input[type="text"].idleField {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #89D700;
+  background: #EFF5FF;
+  color: #000000;
+}
+.error {
+  color: #FF7F00;
+}
+/* SWIPELY's BLUE BUTTON */
+.button.blue {
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  border-radius: 45px;
+  padding: .58em .75em;
+  background-color: #008cdc;
+  background-image: -moz-linear-gradient(top, #0096ea, #007dc8);
+  background-image: -ms-linear-gradient(top, #0096ea, #007dc8);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0096ea), to(#007dc8));
+  background-image: -webkit-linear-gradient(top, #0096ea, #007dc8);
+  background-image: -o-linear-gradient(top, #0096ea, #007dc8);
+  background-image: linear-gradient(top, #0096ea, #007dc8);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#0096ea', endColorstr='#007dc8', GradientType=0);
+  text-shadow: 0 1px 1px #00467a;
+  border: 1px solid #00467a;
+  color: #fff;
+  -webkit-box-shadow: inset 0 1px 0 #00b5f8, 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 0 #00b5f8, 0px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 0 #00b5f8, 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.button.blue:hover {
+  background-color: #0087d5;
+  background-image: -moz-linear-gradient(top, #007dc8, #0096ea);
+  background-image: -ms-linear-gradient(top, #007dc8, #0096ea);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#007dc8), to(#0096ea));
+  background-image: -webkit-linear-gradient(top, #007dc8, #0096ea);
+  background-image: -o-linear-gradient(top, #007dc8, #0096ea);
+  background-image: linear-gradient(top, #007dc8, #0096ea);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#007dc8', endColorstr='#0096ea', GradientType=0);
+}
+.button.blue:active {
+  background-color: #008cdc;
+  background-image: -moz-linear-gradient(top, #0096ea, #007dc8);
+  background-image: -ms-linear-gradient(top, #0096ea, #007dc8);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0096ea), to(#007dc8));
+  background-image: -webkit-linear-gradient(top, #0096ea, #007dc8);
+  background-image: -o-linear-gradient(top, #0096ea, #007dc8);
+  background-image: linear-gradient(top, #0096ea, #007dc8);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#0096ea', endColorstr='#007dc8', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.3);
+}

@@ -6,46 +6,62 @@
 * http://www.opensource.org/licenses/mit-license.php
 * 6/20/2012
 */
-
 /* Table of Content
 ==================================================
 	#Site Styles
 	#Page Styles
 	#Media Queries
 	#Font-Face */
-
 /* #Site Styles
 ================================================== */
-
 /* #Page Styles
 ================================================== */
-
 /* #Media Queries
 ================================================== */
-
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
-
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
-
-
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+/* and (min-width: 768px) */
+@media only screen and (max-width: 959px) {
+  #swipely-nav {
+    width: 768px !important;
+  }
+  .remove-offset {
+    padding-left: 0px !important;
+  }
+  .feature-screenshots {
+    margin-left: 20px !important;
+  }
+  .featured-in,
+  div.features,
+  div.testimonial-container,
+  div.testimonial {
+    width: 768px !important;
+  }
+  .featured-in {
+    background-image: url('../images/featured-in-small.jpg') !important;
+  }
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  
+}
 /* #Font-Face
 ================================================== */
 /* 	This is the proper syntax for an @font-face file
 		Just create a "fonts" folder at the root,
 		copy your FontName into code below and remove
 		comment brackets */
-
 /*	@font-face {
 	    font-family: 'FontName';
 	    src: url('../fonts/FontName.eot');

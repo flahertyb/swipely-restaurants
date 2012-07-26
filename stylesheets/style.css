@@ -1,0 +1,442 @@
+/* Some includes from elements.less *//* 
+ * Swipely Works for Restaurants Stylesheet
+ * Created by : Bart Flaherty
+ */
+html,
+body {
+  width: 100%;
+}
+#swipely-header {
+  position: relative;
+  border-top: solid 1px #003e72;
+  border-left: solid 1px #007cc5;
+  border-right: solid 1px #007cc5;
+  border-bottom: solid 1px #003e72;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  background: #007cc5;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #007cc5), color-stop(1, #0090ce));
+  background: -ms-linear-gradient(bottom, #007cc5, #0090ce);
+  background: -moz-linear-gradient(center bottom, #007cc5 0%, #0090ce 100%);
+  line-height: 18px;
+  height: 48px;
+  margin: 0px;
+  padding: 0px;
+  z-index: 3;
+}
+#swipely-nav {
+  position: absolute;
+  width: 960px;
+  height: 40px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+#logo {
+  margin-left: 20px;
+}
+.restaurant-bg {
+  position: relative;
+  height: 475px;
+  width: 100%;
+  background-image: url('../images/bg.jpg');
+  background-position: center;
+  padding-top: 20px;
+  -webkit-box-shadow: 0 2px 10px #000000;
+  -moz-box-shadow: 0 2px 10px #000000;
+  box-shadow: 0 2px 10px #000000;
+  z-index: 2;
+}
+.pitch {
+  height: auto;
+  width: 537px;
+  padding: 15px;
+  padding-bottom: 5px;
+  padding-top: 7px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -webkit-border-top-left-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  -moz-border-radius-topleft: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  background-color: rgba(255, 255, 255, 0.9);
+  behavior: url('PIE.htc');
+}
+/* value-proposition list */
+.pitch ul {
+  display: table;
+  margin: 0 auto;
+  width: 540px;
+  text-align: center;
+}
+.value-prop li {
+  float: left;
+  height: 135px;
+  width: 140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.features-bg {
+  width: 100%;
+  position: relative;
+  background-image: url('../images/bg-2.jpg');
+  z-index: 1;
+}
+div.features {
+  padding-top: 20px;
+  overflow: auto;
+  width: 850px;
+  margin: 0 auto;
+}
+div.center-me {
+  margin: 0 auto !important;
+}
+.features h1 {
+  margin-bottom: 0px;
+}
+.features div,
+.features ul {
+  float: left;
+}
+.features ul {
+  margin: 0px;
+}
+.features li {
+  width: 191px;
+  background: url('../images/feature-button.png') 0 0 no-repeat;
+  height: 26px;
+  padding: 20px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: bold;
+  margin: 60px 0px;
+  text-align: center;
+}
+.features li:hover {
+  background: url('../images/feature-button.png') 0 -132px no-repeat;
+  cursor: pointer;
+}
+.feature-hover:hover {
+  background: url('../images/feature-button.png') 0 -132px no-repeat !important;
+}
+/* TODO: switch this to h2 and make the pitch h2 an h3 */
+.features h1,
+.testimonial-container h1 {
+  font-size: 32px;
+}
+.feature-screenshots {
+  width: 497px;
+  height: 409px;
+  margin: 20px;
+  margin-left: 102px;
+  background-image: url("../images/feature-sprite.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.feature-content {
+  padding-top: 10px;
+  height: 200px;
+}
+.featured-in {
+  height: 110px;
+  width: 850px;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 10px #000000;
+  -moz-box-shadow: 0 2px 10px #000000;
+  box-shadow: 0 2px 10px #000000;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 0 auto;
+  margin-top: -80px;
+  margin-bottom: 50px;
+  background-image: url('../images/featured-in.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.testimonials-bg {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url("../images/bg-3.jpg");
+  padding-top: 20px;
+  padding-bottom: 40px;
+  z-index: 3;
+  -webkit-box-shadow: 0 2px 15px #000000;
+  -moz-box-shadow: 0 2px 15px #000000;
+  box-shadow: 0 2px 15px #000000;
+}
+.testimonial-container {
+  width: 850px;
+  background-color: #ffffff;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.testimonial {
+  background-image: url("../images/testimonial-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 850px;
+  height: 250px;
+  padding-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+#quote {
+  font-size: 34px;
+  position: relative;
+  width: 380px;
+  margin: 0 auto;
+}
+#source {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+}
+#source p,
+#source img {
+  float: left;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 5px;
+  margin-top: 25px;
+  text-align: left;
+}
+#source a {
+  text-decoration: none;
+}
+#source a:hover {
+  color: #FF7F00;
+}
+#source img {
+  margin-right: 15px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.swipely-works {
+  width: 690px;
+  margin: 0 auto;
+}
+.swipely-works ul {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 690px;
+  text-align: center;
+}
+.business-types li {
+  float: left;
+  height: 190px;
+  width: 190px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+}
+.business-types img:hover {
+  cursor: pointer;
+}
+.show-pointer {
+  background-image: url("../images/pointer.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.hide-pointer {
+  background-image: none;
+}
+.business-types img {
+  margin-bottom: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.swipely-works h3 {
+  text-align: center;
+  padding: 30px;
+}
+footer {
+  position: relative;
+  z-index: 1;
+  background-image: url('http://www.swipelyworks.com/img/footer-bg.png');
+}
+a.call-to-action {
+  text-decoration: none;
+  display: block;
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: .58em .75em;
+  background-color: #71c000;
+  background-image: -moz-linear-gradient(top, #89d700, #4e9e00);
+  background-image: -ms-linear-gradient(top, #89d700, #4e9e00);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#89d700), to(#4e9e00));
+  background-image: -webkit-linear-gradient(top, #89d700, #4e9e00);
+  background-image: -o-linear-gradient(top, #89d700, #4e9e00);
+  background-image: linear-gradient(top, #89d700, #4e9e00);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#89d700', endColorstr='#4e9e00', GradientType=0);
+  text-shadow: 0 1px 1px #254900;
+  border: 1px solid #2a5300;
+  color: #fff;
+  -webkit-box-shadow: inset 0 1px 0 #b1ff2a, 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 0 #b1ff2a, 0px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 0 #b1ff2a, 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+a.call-to-action:hover {
+  background-color: #7bca00;
+  background-image: -moz-linear-gradient(top, #87d600, #6ab900);
+  background-image: -ms-linear-gradient(top, #87d600, #6ab900);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#87d600), to(#6ab900));
+  background-image: -webkit-linear-gradient(top, #87d600, #6ab900);
+  background-image: -o-linear-gradient(top, #87d600, #6ab900);
+  background-image: linear-gradient(top, #87d600, #6ab900);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#87d600', endColorstr='#6ab900', GradientType=0);
+  text-decoration: none;
+  color: white;
+}
+a.call-to-action:active {
+  background-color: #6eb600;
+  background-image: -moz-linear-gradient(top, #60a600, #83d000);
+  background-image: -ms-linear-gradient(top, #60a600, #83d000);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#60a600), to(#83d000));
+  background-image: -webkit-linear-gradient(top, #60a600, #83d000);
+  background-image: -o-linear-gradient(top, #60a600, #83d000);
+  background-image: linear-gradient(top, #60a600, #83d000);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#60a600', endColorstr='#83d000', GradientType=0);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+/* FOOTER STYLES FROM SWIPELYWORKS.COM */
+footer .number,
+footer .twitter,
+footer .facebook,
+footer address {
+  color: #10558f;
+  background: url(../images/footer-icons.png) top left no-repeat;
+  padding-left: 24px;
+  font-size: 12px;
+  margin: 5px 0;
+  line-height: 18px;
+}
+footer .number {
+  background-position: 0px 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 200;
+}
+footer .twitter {
+  background-position: 0px -24px;
+}
+footer .facebook {
+  background-position: 0px -48px;
+}
+footer address {
+  background-position: 0px -70px;
+  font-weight: 200;
+}
+footer .twitter,
+footer .facebook {
+  font-weight: bold;
+  display: block;
+  text-decoration: underline;
+}
+footer .logos,
+footer .terms,
+footer .links {
+  text-align: right;
+  font-size: 12px;
+}
+footer .logos {
+  margin-bottom: 20px;
+}
+footer .links a {
+  color: #10558f;
+  text-decoration: underline;
+  font-weight: bold;
+}
+footer h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-bottom: 6px;
+  background: url(../images/footer-line-fade.png) bottom left no-repeat;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+footer div.container {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
