@@ -46,18 +46,27 @@
 			<form action='https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8' id="lead-capture" method="POST">
 	        <input name='oid' type='hidden' value='00DE0000000ar0w'>
     	    <input name='retURL' type='hidden' value='http://www.swipelyworks.com'>
-			<label for='company'>Business Name</label>
-			<input id='lead-business' name='company' type='text' value="What is your restaurant called?">
+			
+    	    <div id='lead-business'>
+				<label for='company'>Business Name</label>
+				<input name='company' type='text' value="What is your restaurant called?">
+				<p>&nbsp</p>
+			</div>
 				
-			<label for='email'>Email</label>
-			<input id='lead-email' name='email' type='text' value="Where can we reach you?">
+			<div id='lead-email'>
+				<label for='email'>Email</label>
+				<input name='email' type='text' value="Where can we reach you?">
+				<p>&nbsp</p>
+			</div>
 
 			<input class="button blue" value="Learn more about Swipely!" style="display:none;" type="submit">
 			<div id="centered"><a id="send-form-data" class="button blue">Learn more about Swipely!</a></div>
 
+			</form>
+
 		</div>
 
-		</form>
+		
 
 	</section>
 

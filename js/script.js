@@ -98,29 +98,31 @@ var webToLead = function() {
 	    // no errors to start
 	    var error = false;
 	    var validemail = /^([\w-\.]+@[\w-]+\.[\w]{2,4})?$/;
-	    var emailValue = $("#lead-email").val();
-	    var businessValue = $("#lead-business").val();
-
-
+	    var emailValue = $("#lead-email input").val();
+	    var businessValue = $("#lead-business input").val();
 
 	    // if the fields are blank
 	    if ((emailValue == "") || (emailValue == null)){
-		$("#lead-email").after('<p class="error">You forgot to write your email!</p>');
-		error = true;
+	    	$("#lead-business p").hide();
+			$("#lead-email input").after('<p class="error">You forgot to write your email!</p>');
+			error = true;
 	    }
 	    if ((businessValue == "") || (businessValue == null) || ($.trim(businessValue) == 'What is your restaurant called?')){
-		$("#lead-business").after('<p class="error">You forgot to write the name of your organization!"</p>');
+	    	$("#lead-business p").hide();
+			$("#lead-business input").after('<p class="error">You forgot to write the name of your organization!</p>');
+			error = true;
 		}
 
 	    // if the email field is invalid (fails regexp test)
 	    if (!validemail.test(emailValue)) {
-		$("#lead-email").after('<p class="error">Your email doesn\'t seem valid, are you sure there are no typos?</p>');
-		error = true;
+			$("#lead-email p").hide();
+			$("#lead-email input").after('<p class="error">Your email doesn\'t seem valid, are you sure there are no typos?</p>');
+			error = true;
 	    }
 
 	    // if there are no errors 
 	    if (!error) {
-	    	console.log('hi');
+	    	
 			$.ajax({
 		    	type : "POST",
 		    	url : "https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8",
@@ -156,16 +158,9 @@ var formStyling  = function(){
 	});
 }
 
-
-
-
-
-
 $(document).ready(function(){
 	features();
 	testimonials();
 	webToLead();
 	formStyling();
 });
-
-
