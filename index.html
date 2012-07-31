@@ -17,10 +17,9 @@
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/layout.css">	
-	<link rel="stylesheet" type="text/css" href="stylesheets/elements.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/base.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">	
-	<!--<script src="js/less.js" type="text/javascript"></script>-->
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -34,7 +33,18 @@
 
 	<header id="swipely-header">
 		<div id="swipely-nav">
-			<img src="images/logo.png" id="logo">
+			<div id="swipely-nav-left">
+				<a href="http://flahertyb.com/swipely"><img src="images/logo.png" id="logo"></a>
+				<h3><span class="orange-me">works</span> for restaurants.</h3>
+			</div>
+			<div id="swipely-nav-right">
+				<ul>
+					<li><a class="call-to-action" href="lead-capture-form.html">Get Started</a></li>
+					<li class="nav-link"><a href="#testimonials">Testimonials</a></li>							
+					<li class="nav-link"><a href="#features">Features</a></li>					
+
+				</ul>
+			</div>
 		</div>
 	</header>
 
@@ -51,11 +61,19 @@
 					</ul>
 					<a class="call-to-action" href="lead-capture-form.html">Get Started With Swipely</a>
 				</div>
+
+				<div class="banner-cycle">
+					<ul>
+						<li>Fast Casual</li>
+						<li>Casual Dining</li>
+						<li>Fine Dining</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="features-bg">
+	<div class="features-bg"><a name="features"></a>
 		<div class="features container">
 			
 			<h1 class="bold-me">Features</h1>
@@ -84,6 +102,7 @@
 		</div>
 		
 		<div class="testimonial-container" style="background-color:transparent;">
+			<a name="testimonials"></a>
 			<h1 class="bold-me" style="color:white;">Testimonials</h1>
 		</div>
 

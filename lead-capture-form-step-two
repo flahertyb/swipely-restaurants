@@ -12,12 +12,12 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="	stylesheets/skeleton.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/layout.css">	
 	<link rel="stylesheet" type="text/css" href="stylesheets/base.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/form-style.css">
-	
+
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -32,10 +32,7 @@
 
 	<header id="swipely-header">
 		<div id="swipely-nav">
-			<div id="swipely-nav-left">
-				<a href="http://flahertyb.com/swipely"><img src="images/logo.png" id="logo"></a>
-				<h3><span class="orange-me">works</span> for restaurants.</h3>
-			</div>
+			<img src="images/logo.png" id="logo">
 		</div>
 	</header>
 
@@ -47,7 +44,7 @@
 
 			<form action='https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8' id="lead-capture" method="POST">
 	        <input name='oid' type='hidden' value='00DE0000000ar0w'>
-    	    <input name='retURL' type='hidden' value='http://flahertyb.com/swipely/lead-capture-form-step-two.html'>
+    	    <input name='retURL' type='hidden' value='http://www.swipelyworks.com'>
 			
     	    <div id='lead-business'>
 				<label for='company'>Business Name</label>

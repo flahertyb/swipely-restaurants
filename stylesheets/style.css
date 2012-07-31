@@ -6,6 +6,7 @@ html,
 body {
   width: 100%;
 }
+/**********************   SWIPELY NAV  *************/
 #swipely-header {
   position: relative;
   border-top: solid 1px #003e72;
@@ -31,10 +32,58 @@ body {
   left: 0px;
   right: 0px;
   margin: 0 auto;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 #logo {
   margin-left: 20px;
+}
+#swipely-nav-left,
+#swipely-nav-right {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+#swipely-nav-left {
+  margin-top: 4px;
+}
+#swipely-nav h3,
+#swipely-nav img {
+  float: left;
+  margin-left: 10px;
+}
+#swipely-nav h3,
+#swipely-nav li {
+  float: left;
+  color: white;
+  font-weight: bold;
+}
+#swipely-nav li {
+  line-height: 24px;
+  font-size: 15px;
+  height: 24px;
+  float: right;
+  margin-right: 10px;
+}
+#swipely-nav li.nav-link a:link,
+#swipely-nav li.nav-link a:visited {
+  color: white;
+  text-decoration: none;
+}
+#swipely-nav li.nav-link a:hover,
+#swipely-nav li.nav-link a:active {
+  color: #89D700;
+}
+#swipely-nav li.nav-link {
+  margin-top: 5px;
+  padding: 1px;
+}
+#swipely-nav a.call-to-action {
+  float: right;
+  width: 100px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px;
+  margin: 0px;
 }
 .restaurant-bg {
   position: relative;
@@ -90,6 +139,31 @@ body {
   padding-right: 20px;
   font-size: 12px;
   font-weight: bold;
+}
+.banner-cycle ul {
+  position: absolute;
+  width: 160px;
+  padding: 20px;
+  bottom: 0px;
+  right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.banner-cycle li {
+  width: 160px;
+  padding: 5px;
+  margin: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  background-image: url('../images/bullet-unfilled.png');
+  background-position: 137px;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 124, 197, 0.85);
 }
 .features-bg {
   width: 100%;
@@ -325,6 +399,7 @@ footer {
   z-index: 1;
   background-image: url('http://www.swipelyworks.com/img/footer-bg.png');
 }
+/* BUTTON STYLES FROM SWIPELYWORKS.COM */
 a.call-to-action {
   text-decoration: none;
   display: block;
