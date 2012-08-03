@@ -33,6 +33,7 @@ var features = function() {
 			default:
 				break;
 		}
+
 		$('div.feature-screenshots').animate({
 		  'background-position-x': bgPos
 		}, duration, 'linear');
@@ -158,9 +159,58 @@ var formStyling  = function(){
 	});
 }
 
+
+var bannerCycling = function(){
+	var duration = 1000;
+
+	var pics = [];
+	pics.push('../images/bg.jpg');
+	pics.push('http://placekitten.com/1600/588');
+	pics.push('http://placekitten.com/1610/588');
+/*
+	var nextBanner = function(){
+		for (var i = 0; i < pics.length; i++) {
+			$('.restaurant-bg').css('background-image', 
+									'url("' +
+									pics[i] +
+									'")');
+		}
+	}
+*/
+	var nextBanner = function(index){
+		if ( index > 2 ) {
+			index = 0;
+		}
+		var nextBanner = function() {
+			$('.restaurant-bg').css('background-image', 
+										'url(' + pics[index] + ')');
+		}
+		console.log('url("' + pics[index] + '")');
+
+		index = index + 1;
+
+		setTimeout(function(){
+			nextBanner(index);
+		}, duration);
+
+	}
+
+	nextBanner(1);
+
+}
+
+/*	console.log('background-image', 
+									'url("' +
+									pics[index] +
+									'")');
+*/
+	
+
+
 $(document).ready(function(){
 	features();
 	testimonials();
 	webToLead();
 	formStyling();
+	/*bannerCycling();*/
 });
